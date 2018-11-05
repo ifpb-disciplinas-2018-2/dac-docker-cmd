@@ -1,0 +1,5 @@
+FROM alpine 
+RUN echo "sou a terceira layer"
+RUN apk add --no-cache curl
+ENV JAVA_HOMES "google.com"
+CMD ping ${JAVA_HOMES}
